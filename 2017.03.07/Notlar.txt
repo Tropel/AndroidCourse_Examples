@@ -1,0 +1,19 @@
+FTP Kullanýmý Video
+- https://www.youtube.com/watch?v=YtEfeAolOl4
+
+Java JDK ve Eclipse IDE
+- https://www.youtube.com/watch?v=gzYIopBHH3Q
+
+Web Temelleri ve Bilinmesi Gereken Konular
+
+- HTML5
+- CSS3
+- JavaScript/JQuery
+- FTP (File Transfer Protocol)
+- XML (eXtensible Markup Language, Yazýlým Dilleri Arasý Evrensel Veri Etkileþimi Standartlarý)
+- JSON (Yazýlým Dilleri Arasý Evrensel Veri Etkileþimi Standartlarý, XML Alternatifi, JavaScript Based)
+- SQL,SQLite (Database)
+- SOAP (WebService)
+- RESTful (WebService)
+- PHP (Web Yazýlým Dili - Bu dillerden ihtiyaca göre en az 1 tanesi bilinmeli)
+- ASP.NET (Web Yazýlým Dili - Bu dillerden ihtiyaca göre en az 1 tanesi bilinmeli)
