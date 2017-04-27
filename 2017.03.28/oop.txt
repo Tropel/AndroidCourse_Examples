@@ -1,0 +1,34 @@
+OOP Temelleri
+
+-Object Oriented Programming (Nesne Yönelimli Programlama)
+
+-Encapsulation (Kapsülleme)
+-- Kapsülleme; yeni bir class üretilip field'lar için, getter ve setter metotlar üretilir.
+-- Fieldlar private olarak tanýmlanýr. Get ve Set metotlar ise, public olarak tanýmlanýr.
+
+-Inheritance (Kalýtým)
+-- Bir class oluþturulurken, baþka bir class'dan kalýtým alabilir.
+-- Burada exdends kelimesi önemlidir. Ayrýca Interitance'da super.metodAdi() gibi deðer kullanýlabilir.
+-- Metot Override iþlemi yapabilir.
+-- örn: public class Insan extends Adem{}
+
+-Polymorphism (Çok Biçimlilik)
+-- implements kelimesi burada en önemli anahtar deðerdir.
+-- Bir class birden fazla interface'den implement edilebilir.
+-- Örneðin: public class Ayi extends Hayvan implements Otcul,Etcil{
+}
+-- interface'lerin kullanýmlarý ile ilgili olarak, metotlarýn nasýl tanýmlanacaðý kýsmýnda ise, implement eden class üzerinde
+tanýmlama yapýlýr.
+
+-Abstract
+--Bir class'ýn doðrudan herhangi bir class üzerinde new'leme iþlemi yapýlarak oluþturulmasý engellenir.
+--Abstract edilen bir class, farklý bir class üzerinden çaðýrýlmak istenirse, çaðýrýlmak istenen class üzerinde abstract class,
+sadece extend edilerek kullanýlabilir.
+
+-Class oluþturma
+--Her class örneðin; Kedi kedi = new Kedi(); gibi oluþturulur.
+--Burada new Kedi(); kýsmý new'leme iþlemi yapar. Yani nesneyi bu zamanda üretiriz.
+
+
+
+https://www.tutorialspoint.com/java
