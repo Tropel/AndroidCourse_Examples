@@ -1,0 +1,16 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class RandomKullanim {
+
+	
+	public static void main(String[] args) {
+		
+		Random rnd = new Random();
+		int rastgeleSayi = rnd.nextInt(50); // 0-50 arasý rastgele sayý üretir
+		System.out.println(rastgeleSayi);
+		
+	}
+
+}

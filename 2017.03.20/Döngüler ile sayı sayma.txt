@@ -1,0 +1,49 @@
+
+public class Say {
+
+	public Say(){}
+	
+	public void forDongusu(){
+		for(int i = 0; i<10; i++){
+			System.out.println(i);
+		}
+	}
+	
+	public void whileDongusu(){
+		int i =0;
+		while(i<10){
+			System.out.println(i);
+			i++;
+		}
+	}
+	
+	public void doWhileDongusu(){
+		int i=0;
+		do{
+			System.out.println(i);
+			i++;
+		}while(i<10);
+	}
+	
+	public static void main(String[] args) {
+		
+		Say say = new Say();
+		System.out.println("For döngüsü örneði");
+		say.forDongusu();
+		System.out.println("---");
+		System.out.println("While döngüsü örneði");
+		say.whileDongusu();
+		System.out.println("---");
+		System.out.println("Do While döngüsü örneði");
+		say.doWhileDongusu();
+		System.out.println("---");
+		
+		int i =0;
+		while(i<5){
+			System.out.println(i);
+			i++;
+		}
+
+	}
+
+}

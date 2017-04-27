@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+public class Ornek {
+
+	
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		String[] dizi = new String[5];
+		for(int i=0; i<dizi.length; i++){
+			dizi[i]=scanner.next().toLowerCase();
+		}
+		
+		int sayi = 0;
+		
+		for(int i=0; i<dizi.length; i++){
+			if(dizi[i].charAt(0)=='a'){
+				sayi++;
+			}
+		}
+		String[] dizi2 = new String[sayi];
+		sayi=0;
+		
+		for(int i=0; i<dizi.length; i++){
+			if(dizi[i].charAt(0)=='a'){
+				dizi2[sayi]=dizi[i];
+				sayi++;
+			}
+		}
+		for(int i=0; i<dizi2.length; i++){
+			System.out.println(dizi2[i]);
+		}
+		
+		
+
+	}
+
+}

@@ -1,0 +1,52 @@
+package com.serifgungor;
+
+import java.util.Scanner;
+
+public class Merhaba {
+	
+
+	public static void main(String[] args){
+		
+		System.out.println("Veri giriþi yapýnýz; topla,cikar,carp,bol");		
+		Scanner sc = new Scanner(System.in);
+		String islem = sc.next();
+		
+		System.out.println("Sayý 1 giriniz;");
+		int sayi1 = sc.nextInt();
+		System.out.println("Sayý 2 giriniz;");
+		int sayi2 = sc.nextInt();
+		double sonuc = 0;
+		
+		switch(islem){
+			case "topla":
+				sonuc = sayi1+sayi2;
+				System.out.println("Sayý 1 = "+sayi1+" "+"Sayý 2 ="+sayi2+" Sonuç= "+sonuc);
+				break;
+			case "cikar":
+				sonuc = sayi1-sayi2;
+				System.out.println("Sayý 1 = "+sayi1+" "+"Sayý 2 ="+sayi2+" Sonuç= "+sonuc);
+				break;
+			case "carp":
+				sonuc = sayi1*sayi2;
+				System.out.println("Sayý 1 = "+sayi1+" "+"Sayý 2 ="+sayi2+" Sonuç= "+sonuc);
+				break;
+			case "bol":
+				sonuc = (double)sayi1/sayi2;
+				System.out.println("Sayý 1 = "+sayi1+" "+"Sayý 2 ="+sayi2+" Sonuç= "+sonuc);
+				break;
+			default:
+				System.out.println("Hatalý iþlem !");
+				break;
+		}
+		
+		
+		
+		
+		
+		
+
+		
+		
+	}
+
+}

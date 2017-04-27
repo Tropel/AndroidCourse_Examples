@@ -1,0 +1,37 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class RastgeleSayi {
+
+	public RastgeleSayi(){}
+	
+	public int sayiUret(){
+		Random rnd = new Random();
+		return rnd.nextInt(6);
+	}
+	
+	public static void main(String[] args) {
+		
+		int sayiTut = 0;
+		
+		RastgeleSayi rastgele = new RastgeleSayi();
+		sayiTut = rastgele.sayiUret();
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Lütfen bir sayý giriniz");
+		int sayi = sc.nextInt();
+		System.out.println("Sayý buydu: "+sayiTut);
+		
+		if(sayi==sayiTut){
+			System.out.println("Tebrikler, sayýyý buldunuz !");
+		}else if(sayi>sayiTut){
+			System.out.println("Sayýnýz, üretilen sayýdan büyüktür !");
+		}else{
+			System.out.println("Sayýnýz, üretilen sayýdan küçüktür !");
+		}
+		
+		
+	}
+
+}

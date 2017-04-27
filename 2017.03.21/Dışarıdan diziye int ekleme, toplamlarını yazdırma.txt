@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+public class Dizi {
+
+	public static void main(String[] args) {
+		
+		//DIÞARIDAN 10 integer AL, DÝZÝYE EKLE. TÜM ELEMANLARI TOPLA, SONUCU EKRANA YAZ
+		
+		int[] sayilar = new int[2];
+		Scanner sc = new Scanner(System.in);
+		
+		int sonuc = 0;
+		for(int i =0; i<sayilar.length; i++){
+			System.out.println(i+". sayýyý giriniz;");
+			sayilar[i] = sc.nextInt();
+			sonuc = sonuc + sayilar[i];
+		}
+		System.out.println("--\nSayýlarýn Toplamý: "+sonuc+"\n--");
+		for(int i =0; i<sayilar.length; i++){
+			System.out.println(i+". eleman: "+sayilar[i]);
+		}
+		
+		
+		
+
+	}
+
+}

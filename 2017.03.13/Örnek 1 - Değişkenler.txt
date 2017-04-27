@@ -1,0 +1,49 @@
+package com.serifgungor;
+
+public class Merhaba {
+	
+	// BU BÝR AÇIKLAMA SATIRIDIR.
+	
+	/*
+	  BÝRDEN FAZLA
+	  AÇIKLAMA
+	  SATIRI KULLANIMI
+	 */
+	
+	public static void main(String[] args){
+		
+		System.out.println("Merhaba, Android Sýnýfý !");
+		
+		int sayi = 50000;		
+		String isim = "Android Programlama";
+		boolean durum = false;
+		byte b = -128;
+		double d = 1.500000645d;
+		float f = 1.648798f;
+		long l = 1000000000;
+		
+		/*
+		System.out.println(isim+" "+sayi);
+		
+		String yeniMetin = isim+" "+sayi;
+		
+		System.out.println(yeniMetin);
+		*/
+		
+		int sayi1 = 50;
+		int sayi2 = 100;
+		
+		
+		System.out.println("Sayý1: "+sayi1+" ve Sayý2: "+sayi2+" Toplama: "+(sayi1+sayi2));
+		System.out.println("----");
+		System.out.println("Sayý1: "+sayi1+" ve Sayý2: "+sayi2+" Çýkarma: "+(sayi1-sayi2));
+		System.out.println("----");
+		System.out.println("Sayý1: "+sayi1+" ve Sayý2: "+sayi2+" Bölme: "+(sayi1/sayi2));
+		System.out.println("----");
+		System.out.println("Sayý1: "+sayi1+" ve Sayý2: "+sayi2+" Çarpma: "+(sayi1*sayi2));
+		
+		
+		
+	}
+
+}

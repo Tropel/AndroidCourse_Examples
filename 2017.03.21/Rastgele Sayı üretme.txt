@@ -1,0 +1,21 @@
+import java.util.Random;
+
+
+public class RastgeleSayi {
+
+	public RastgeleSayi(){}
+	
+	public int sayiUret(){
+		Random rnd = new Random();
+		return rnd.nextInt(50);
+	}
+	
+	public static void main(String[] args) {
+		
+		RastgeleSayi rastgele = new RastgeleSayi();
+		System.out.println(rastgele.sayiUret());
+		System.out.println(rastgele.sayiUret());
+
+	}
+
+}

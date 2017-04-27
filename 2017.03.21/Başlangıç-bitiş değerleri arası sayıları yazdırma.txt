@@ -1,0 +1,29 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class RastgeleSayi {
+
+	public RastgeleSayi(){}
+	
+	public void sayilariYazdir(int sayiBaslangic,int sayiBitis){
+		for(int i =sayiBaslangic; i<=sayiBitis; i++){
+			System.out.println(i);
+		}		
+	}
+	
+	public static void main(String[] args) {
+		
+		RastgeleSayi r = new RastgeleSayi();
+		
+		Scanner s = new Scanner(System.in);
+		System.out.println("Baþlangýç deðerini giriniz;");
+		int baslangic = s.nextInt();
+		System.out.println("Bitiþ deðerini giriniz;");
+		int bitis = s.nextInt();
+		r.sayilariYazdir(baslangic, bitis);
+		
+		
+	}
+
+}

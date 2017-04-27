@@ -1,0 +1,32 @@
+package com.serifgungor;
+
+import java.util.Scanner;
+
+public class Merhaba {
+	
+
+	public static void main(String[] args){
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Mevsim giriniz; sonbahar,kýþ,ilkbahar,yaz");
+		
+		String mevsim = scanner.next();
+		
+		if("sonbahar".equals(mevsim)){
+			System.out.println("Eylül,ekim,kasým");
+		}else if("kýþ".equals(mevsim)){
+			System.out.println("Aralýk,ocak,þubat");
+		}else if("ilkbahar".equals(mevsim)){
+			System.out.println("Mart,nisan,mayýs");
+		}else if("yaz".equals(mevsim)){
+			System.out.println("Haziran,temmuz,aðustos");
+		}
+		
+		
+
+		
+		
+	}
+
+}

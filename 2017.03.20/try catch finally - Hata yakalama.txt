@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+public class HataYakala {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+
+		try{
+			int sayi1 = sc.nextInt();
+			int sayi2 = sc.nextInt();
+			int sonuc = sayi1/sayi2;
+		}catch(java.util.InputMismatchException ex){
+			System.out.println("Türleri farklý deðerler atanaz");
+		}catch(java.lang.ArithmeticException ex){
+			System.out.println("Sýfýra bölmeyiniz");
+		}finally{
+			System.out.println("Finally bloðu çalýþtý");
+		}
+
+	}
+
+}

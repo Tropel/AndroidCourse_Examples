@@ -1,0 +1,33 @@
+package com.serifgungor;
+
+import java.util.Scanner;
+
+public class Merhaba {
+	
+
+	public static void main(String[] args){
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Kullanýcý adý giriniz;");
+		String kullaniciAdi = scanner.next();
+		System.out.println("Þifre giriniz;");
+		String kullaniciSifre = scanner.next();
+		System.out.println("Yaþýnýzý giriniz");
+		int yas = scanner.nextInt();
+		
+		
+		if("admin".equals(kullaniciAdi) && "1234".equals(kullaniciSifre)){
+			System.out.println("Hoþ geldin !");
+			if(yas<50){
+				System.out.println("Yaþýnýz 50'den küçük");
+			}else if(yas>=50){
+				System.out.println("Yaþýnýz 50'ye eþit yada büyük");
+			}
+		}else{
+			System.out.println("Güle güle !");
+		}
+		
+	}
+
+}

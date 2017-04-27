@@ -1,0 +1,37 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class RandomDizi {
+
+	
+	public static void main(String[] args) {
+	
+		
+		System.out.println("Kaç adet sayý üretilsin ?");
+		Scanner sc = new Scanner(System.in);
+		int sayi = sc.nextInt();
+		int ciftToplam = 0;
+		int tekToplam = 0;
+		int[] sayilar = new int[sayi];
+		
+		Random rnd = new Random();
+		for(int i=0; i<sayi; i++){
+			sayilar[i]=rnd.nextInt(50);
+			if(sayilar[i]%2==0){
+				System.out.println(sayilar[i]+" çifttir.");
+				ciftToplam = ciftToplam + sayilar[i];
+			}else{
+				System.out.println(sayilar[i]+" tektir.");
+				tekToplam = tekToplam + sayilar[i];
+			}
+		}
+		
+		System.out.println("Çift sayýlarýn toplamý: "+ciftToplam);
+		System.out.println("Tek sayýlarýn toplamý: "+tekToplam);
+		
+		
+
+	}
+
+}

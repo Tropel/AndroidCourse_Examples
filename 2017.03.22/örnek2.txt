@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+
+public class HarfSayisi {
+	
+	public HarfSayisi(){}
+	
+	public void harfSayisiHesapla(String metin){
+		int aSayisi = 0;
+		int eSayisi = 0;
+		metin = metin.toLowerCase();
+		for(int i =0; i<metin.length(); i++){
+			if(metin.charAt(i)=='a'){
+				aSayisi++;
+			}else if(metin.charAt(i)=='e'){
+				eSayisi++;
+			}
+		}
+		System.out.println("Metinde geçen a sayýsý: "+aSayisi);
+		System.out.println("Metinde geçen e sayýsý: "+eSayisi);
+	}
+	
+	public static void main(String[] args) {
+		HarfSayisi harf = new HarfSayisi();
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Metin giriniz;");
+		harf.harfSayisiHesapla(sc.nextLine());
+
+	}
+
+}

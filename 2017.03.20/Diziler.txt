@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+
+public class Dizi1 {
+	
+	public Dizi1(){}
+
+
+	public static void main(String[] args) {
+		
+		/*
+		// ÖRNEK1
+		int[] sayilar = new int[5];
+		Scanner sc = new Scanner(System.in);
+				
+		for(int i =0; i<sayilar.length; i++){
+			System.out.println((i+1)+".elemaný gir");
+			sayilar[i]=sc.nextInt();
+			System.out.println(sayilar[i]);
+		}
+		*/
+
+		/*
+		//ÖRNEK2
+		Scanner sc = new Scanner(System.in);
+		String kelime = sc.nextLine();
+		char[] karakterler = new char[kelime.length()];
+		
+		for(int i=0; i<kelime.length(); i++){
+			karakterler[i]=kelime.charAt(i);
+			System.out.println(karakterler[i]);
+		}
+		*/
+		
+		//ÖRNEK3		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Kaç metin gireceksiniz ?");
+		int metinSayisi = sc.nextInt();
+		char[] chr = new char[metinSayisi];
+		
+		for (int i = 0; i < chr.length; i++) {
+			System.out.println(i+" metni girniz");
+			chr[i]=sc.next().charAt(0);
+		}
+		
+		String yeniMetin = "";
+		for (int i = 0; i < chr.length; i++) {
+			yeniMetin = yeniMetin + chr[i];
+		}
+		System.out.println(yeniMetin);
+		
+	
+
+
+	}
+
+}

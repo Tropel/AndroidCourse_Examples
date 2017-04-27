@@ -1,0 +1,36 @@
+package com.serifgungor;
+
+import java.util.Scanner;
+
+public class Merhaba {
+	
+
+	public static void main(String[] args){
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		// ÝNT TO STRÝNG
+		int sayi = 5;		
+		String yazi = String.valueOf(sayi);
+		
+		//STRÝNG TO ÝNT		
+		String yazi2 = "100";
+		int sayi2 = Integer.parseInt(yazi2);
+		
+		//Cast
+		char c = 'A';
+		int sayi3 = (int)c;
+		//System.out.println(sayi3);
+		
+		//DOUBLE TO ÝNT
+		double d = 10.9d;
+		int sayi4 = (int) d;
+		System.out.println(sayi4);
+		
+		
+
+		
+		
+	}
+
+}

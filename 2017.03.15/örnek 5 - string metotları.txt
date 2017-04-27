@@ -1,0 +1,51 @@
+package com.serifgungor;
+
+import java.util.Scanner;
+
+public class Merhaba {
+	
+
+	public static void main(String[] args){
+		
+		
+		String str = "Yenibosna Biliþim Okulu";
+		
+		// TÜM KARAKTERLERÝ KÜÇÜK HARFE DÖNÜÞTÜRÜR
+		System.out.println(str.toLowerCase());
+		
+		// TÜM KARAKTERLERÝ BÜYÜK HARFE DÖNÜÞTÜRÜR
+		System.out.println(str.toUpperCase());
+		
+		// STRÝNG ÝÇERÝSÝNDEKÝ BAÞLANGIÇ VE BÝTÝÞ
+		// ÝNDÝSLERÝ ARASINDAKÝ KARAKTERÝ DÖNER
+		String istanbul = "yunanistanbulgaristan";
+		System.out.println(istanbul.substring(5, 13));
+		
+		// CHAR AT ÖRNEÐÝ
+		String isim = "ÝSMEK";		
+		System.out.print(isim.charAt(0));
+		System.out.print(isim.charAt(1));
+		System.out.print(isim.charAt(2));
+		System.out.print(isim.charAt(3));
+		System.out.print(isim.charAt(4));
+		
+		// LENGTH ÖRNEÐÝ - UZUNLUK - KARAKTER SAYISI
+		System.out.println(isim.length());
+		
+		// EQUALS ÖRNEÐÝ
+		if("ÝSMEKK".equals(isim)){
+			System.out.println("true");
+		}else{
+			System.out.println("false");
+		}
+
+		// ÝNDEX OF - ilk bulduðu indisi iþaret eder, bulamazsa -1 döner
+		String metin = "merhaba, burasý android sýnýfý";
+		System.out.println(metin.indexOf("android"));
+		
+		// LAST ÝNDEX OF - son bulduðu indisi iþaret eder, bulamazsa -1 döner
+		metin = "merhaba, burasý android sýnýfý android android";
+		System.out.println(metin.lastIndexOf("android"));
+	
+	}
+}

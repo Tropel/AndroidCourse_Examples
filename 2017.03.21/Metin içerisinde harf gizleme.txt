@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+
+public class KarakterSil {
+
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Metin giriniz;");
+		Scanner sc = new Scanner(System.in);
+		String metin = sc.nextLine();
+		System.out.println("Silinecek karakteri giriniz;");
+		char silinecekKarakter = sc.next().charAt(0);
+		
+		for(int i=0; i<metin.length(); i++){
+			if(metin.charAt(i)!=silinecekKarakter){
+				System.out.print(metin.charAt(i));
+			}
+		}
+		
+
+	}
+
+}

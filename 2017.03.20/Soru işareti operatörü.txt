@@ -1,0 +1,28 @@
+
+public class AnaClass {
+
+
+	public static void main(String[] args) {
+		
+		
+		//SORU ÝÞARETÝ OPERATÖRÜ
+		String ders = "android";
+		boolean dersVarmi = (ders == null ? false:ders.equals("android"));
+		System.out.println(dersVarmi);
+		/*
+		if(ders==null){
+			dersVarmi = false;
+		}else if(ders=="android"){
+			dersVarmi = true;
+		}
+		*/
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+import java.util.Random;
+
+
+public class RastgeleSayi {
+
+	public RastgeleSayi(){}
+	
+	public int sayiUret(){
+		Random rnd = new Random();
+		return rnd.nextInt(50);
+	}
+	
+	public static void main(String[] args) {
+		
+		RastgeleSayi rastgele = new RastgeleSayi();
+		int sayi1 = rastgele.sayiUret();
+		int sayi2 = rastgele.sayiUret();
+
+		if(sayi1>sayi2){
+			System.out.println("Sayý 1: "+sayi1+" Sayý 2: "+sayi2+"'den büyüktür.");
+		}else if(sayi2>sayi1){
+			System.out.println("Sayý 2: "+sayi2+" Sayý 1: "+sayi1+"'den büyüktür.");
+		}else{
+			System.out.println("Sayýlar eþittir.");
+		}
+		
+		
+	}
+
+}
